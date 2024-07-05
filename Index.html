@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<style>
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for login form */
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left section styles */
+.left-section {
+    flex: 1;
+    background-color: #fff; /* White background for the left section */
+    padding: 20px;
+}
+
+.left-section h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Form styles */
+.left-section form {
+    text-align: center;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container i {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.input-container input {
+    width: calc(100% - 40px);
+    padding: 10px;
+    padding-left: 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Login button styles */
+.login-button {
+    background-color: #8e44ad;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #6c3483;
+}
+
+/* Login options styles */
+.login-options {
+    margin-top: 15px;
+    color: #666;
+	text-align: center;
+}
+
+.other-logins {
+    margin-top: 10px;
+}
+
+/* Social login buttons */
+.login-with-google,
+.login-with-facebook {
+    background-color: transparent;
+    color: #666;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.login-with-google:hover,
+.login-with-facebook:hover {
+    color: #8e44ad;
+}
+
+/* Right section styles */
+.right-section {
+    flex: 1;
+    background-color: #8e44ad; /* Purple background for the right section */
+}
+
+</style>
+<body>
+    <div class="login-container">
+        <div class="left-section">
+            <h2>LOGIN</h2> <br>
+			<h5> How to i got started lorem ipsum dolor at ? </h5> <br>
+            <form action="#">
+                <div class="input-container">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" id="username" name="username">
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" id="password" name="password">
+                </div>
+                <button type="submit" class="login-button">Login Now</button>
+            </form>
+            <div class="login-options">
+                <p><b>Login</b> with Others</p>
+                <div class="other-logins">
+                    <button class="login-with-google"><i class="fab fa-google"></i> Login with <b>Google</b></button>
+                    <button class="login-with-facebook"><i class="fab fa-facebook"></i> Login with <b>Facebook</b></button>
+                </div>
+            </div>
+        </div>
+        <div class="right-section"></div>
+    </div>
+</body>
+</html>
